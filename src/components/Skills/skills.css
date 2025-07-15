@@ -5,10 +5,11 @@
 }
 
 .skillsTitle {
-  font-size: 2rem;
-  font-weight: bold;
+   margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
   color: #217ace;
-  margin-bottom: 0.5rem;
+  
 }
 
 .skillsDesc {

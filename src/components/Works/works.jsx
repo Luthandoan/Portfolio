@@ -9,7 +9,7 @@ import Portfolio5 from '../../assets/portfolio-5.png';
 const portfolioItems = [
   {
     image: Portfolio1,
-    link: 'https://github.com/Luthandoan?tab=repositories',
+    link: 'https://github.com/Luthandoan/Employee-payroll-management-system.',
     title: 'Employee Payroll Management System',
   },
   {
