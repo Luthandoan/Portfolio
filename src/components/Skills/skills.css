@@ -1,0 +1,92 @@
+.skillsSection {
+  padding: 2rem 1rem;
+  background: rgb(30,30,30);
+  text-align: center;
+}
+
+.skillsTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #217ace;
+  margin-bottom: 0.5rem;
+}
+
+.skillsDesc {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skillsGroup {
+  margin-bottom: 2rem;
+}
+
+.skillsGroupTitle {
+  font-size: 1.3rem;
+  color: #e013e0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.skillItem {
+  text-align: left;
+}
+
+.skillName {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+
+.skillBarWrapper {
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 10px;
+  position: relative;
+}
+
+.skillBarFill {
+  background: linear-gradient(90deg, #ff69b4, #8a2be2);
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+/* Add fun hover effect (small scale boost) */
+.skillBarFill:hover {
+  transform: scaleY(1.3);
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .skillsTitle {
+    font-size: 1.6rem;
+  }
+
+  .skillsDesc {
+    font-size: 0.9rem;
+  }
+
+  .skillsGroupTitle {
+    font-size: 1.1rem;
+  }
+
+  .skillName {
+    font-size: 0.85rem;
+  }
+}

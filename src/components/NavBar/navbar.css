@@ -1,0 +1,137 @@
+.navbar {
+  height: 5rem;
+  width: 100%;
+  
+  
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: rgb(30, 30, 30);
+  box-sizing: border-box;
+}
+
+/* Logo text or image */
+.logoText {
+  height: 3rem;
+  width: auto;
+  font-size: 1.25rem; /* 20px approx */
+  font-weight: 600;
+  color: rgb(224, 19, 224);
+  display: flex;
+  align-items: center;
+  
+}
+
+/* Desktop menu */
+.desktopMenuListItem {
+  margin: 0 1rem;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid transparent;
+}
+
+.desktopMenuListItem:hover {
+  color: #217ace;
+  border-bottom: 3px solid #217ace;
+}
+
+.active {
+  color: #217ace;
+  border-bottom: 3px solid #217ace;
+}
+
+.desktopMenuBtn {
+  background: #217ace;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.desktopMenuBtn:hover {
+  background: rgb(224, 19, 224);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Image inside button */
+.desktopMenuImg {
+  height: 1rem;
+  width: 1rem;
+  margin-left: 0.5rem; /* better spacing */
+  object-fit: contain;
+}
+
+/* Mobile menu dropdown */
+.navMenu {
+  position: absolute;
+  top: 5rem; /* just below navbar height */
+  right: 1rem;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  min-width: 15rem;
+  background: rgb(30, 30, 30);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+/* Individual list items inside mobile menu */
+.listItem {
+  padding: 0.75rem 2rem;
+  color: white;
+  margin: 0.25rem 0;
+  background: rgb(40, 40, 40);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.listItem:hover {
+  background: #217ace;
+  color: white;
+}
+
+/* Mobile menu icon (hamburger or close) */
+.mobMenu {
+  display: none;
+  height: 2rem;
+  width: 2rem;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 720px) {
+  .desktopMenu {
+    display: none;
+  }
+  .desktopMenuBtn {
+    display: none;
+  }
+  .mobMenu {
+    display: block;
+  }
+  
+  /* Optional: center logo better on mobile */
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,135 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    width: auto;
+    max-width: 100%;
+  }
+  
+  .introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 4.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .hello {
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: white;
+  }
+  
+  .introName {
+    color: #217ace;
+  }
+  
+  .introPara {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 1.5rem;
+    max-width: 600px;
+    color: white;
+  }
+  
+  .animatedTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(224, 19, 224);
+    display: inline-block;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn {
+    background: rgb(224, 19, 224);
+    margin: 1.5rem 0;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 10px rgb(224, 19, 224), 0 0 20px rgb(224, 19, 224), 0 0 30px rgb(224, 19, 224);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .btnImg {
+    object-fit: cover;
+    height: 1.2rem;
+  }
+  
+  /* Medium screens */
+  @media screen and (max-width: 840px) {
+    .bg {
+      right: -10vw;
+    }
+  
+    .introContent {
+      font-size: 8vw;
+      padding: 1.5rem;
+    }
+  
+    .hello {
+      font-size: 4vw;
+    }
+  
+    .animatedTitle {
+      font-size: 6vw;
+    }
+  }
+  
+  /* Small screens */
+  @media screen and (max-width: 480px) {
+    .bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        object-fit: cover;
+        height: 100vh;
+        width: auto;
+        max-width: 50vw; /* Adjust for layout */
+        transition: transform 0.3s ease;
+      }
+      
+  
+    .introContent {
+      font-size: 9vw;
+      text-align: center;
+    }
+  
+    .animatedTitle {
+      font-size: 7vw;
+    }
+  
+    .btn {
+      justify-content: center;
+    }
+  }
+  
