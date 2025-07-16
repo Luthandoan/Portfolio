@@ -135,3 +135,13 @@
     padding: 1rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .logoText {
+    font-size: 1.2rem;
+  }
+}
